@@ -45,12 +45,12 @@ const Login = () => {
       })
   }
   return (
-    <div>
+    <div className='text-center mt-8'>
       {user ?
-        <button onClick={handleLogOut}>Log-Out</button> :
+        <button className='bg-blue-950 text-white p-3 rounded-xl font-bold' onClick={handleLogOut}>Log-Out</button> :
         <>
-          <button onClick={handleLogIn}>LogIn</button>
-          <button onClick={handleGitHubLogIn}>GitHub-Login</button>
+          <button className='bg-blue-950 mr-4 text-white p-3 rounded-xl font-bold' onClick={handleLogIn}>LogIn</button>
+          <button className='bg-lime-500 text-white p-3 rounded-xl font-bold' onClick={handleGitHubLogIn}>GitHub-Login</button>
         </>
       }
       {

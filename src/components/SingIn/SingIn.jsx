@@ -44,12 +44,12 @@ const SingIn = () => {
       })
   }
   return (
-    <div>
+    <div className='text-center mt-8'>
       { user?
-      <button onClick={handleSingOut}>Sing-Out</button> :
+      <button className='bg-blue-950 text-white p-3 rounded-xl font-bold' onClick={handleSingOut}>Sing-Out</button> :
       <>
-         <button onClick={handleSingIn}>Sing-In</button>
-         <button onClick={handleGitHubLogin}>GitHub-logIn</button>
+         <button className='bg-blue-950 mr-4 text-white p-3 rounded-xl font-bold' onClick={handleSingIn}>Sing-In</button>
+         <button className='bg-lime-500 text-white p-3 rounded-xl font-bold' onClick={handleGitHubLogin}>GitHub-logIn</button>
       </>
       }
       {user && <div>

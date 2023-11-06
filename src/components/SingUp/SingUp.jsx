@@ -30,10 +30,10 @@ const SingUp = () => {
       })
   }
   return (
-    <div>
+    <div className='text-center mt-8'>
       { user ?
-       <button onClick={handleSingOut}>Sing-Out</button> :
-       <button onClick={handleSingUp}>Sing-Up</button>
+       <button className='bg-blue-950 text-white p-3 rounded-xl font-bold' onClick={handleSingOut}>Sing-Out</button> :
+       <button  className='bg-lime-500 text-white p-3 rounded-xl font-bold' onClick={handleSingUp}>Sing-Up</button>
       }
       {user && <div>
         <h1>Name:{user.displayName}</h1>
